@@ -27,6 +27,26 @@ int main() {
         printf("Esquerda\n");
         contadorRainha++;
     } while (contadorRainha <= casasRainha);
+    printf("\n");
+
+    // Movimentação do Cavalo usando FOR + WHILE (loops aninhados)
+    int movimentosVerticais = 2; // Cavalo se move duas casas para baixo
+    int movimentosHorizontais = 1; // Depois uma casa para esquerda
+    int i;
+
+    printf("Movimentação do Cavalo:\n");
+
+    // Primeiro loop FOR para os movimentos verticais
+    for (i = 1; i <= movimentosVerticais; i++) {
+        printf("Baixo\n");
+    }
+
+    // Depois, um loop WHILE para o movimento horizontal
+    int j = 1;
+    while (j <= movimentosHorizontais) {
+        printf("Esquerda\n");
+        j++;
+    }
 
     return 0;
 }
